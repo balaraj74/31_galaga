@@ -1,11 +1,10 @@
 # PES UNIVERSITY — DEPARTMENT OF COMPUTER SCIENCE & ENGINEERING
 ## Software Engineering Lab (UE24CS242) — Lab 4: VibeCoding
-**Student Name:** Balaraj R  
-**SRN:** PES1UG24CS560  
-**Semester & Branch:** 4th Semester, B.Tech CSE (AI & ML)  
+**Student Name:** Mohith N  
+**SRN:** PES1UG24CS580  
+**Semester & Branch:** 4th Semester, B.Tech CSE  
 **Assigned Repository:** `https://github.com/SETAPESU26/31_galaga`  
-**Personal Fork Repository:** `https://github.com/balaraj74/31_galaga`  
-**Lab Repository:** `https://github.com/balaraj74/SE-Labs-PES1UG24CS560`  
+**Lab Repository:** `https://github.com/Mohith-1502/SE-LAB-PES1UG24CS580`  
 **Date:** October 8, 2026  
 
 ---
@@ -82,5 +81,5 @@ Implement shield_charges(wave) in game.py to grant 1 shield charge at wave 1 plu
 | **Before Video** | `Lab-4/before.mp4` | 15s recording of gameplay showing cubic Bézier trajectory overshooting bug and unassigned features. |
 | **After Video** | `Lab-4/after.mp4` | 15s recording of gameplay showing fixed Bézier curves, stage banner, dynamic enemy recoloring, and active energy shield. |
 | **Updated Code** | `Lab-4/code/` & `game.py` | Complete working source code with all 4 tasks implemented. |
-| **Chat History Doc** | `Lab-4/PES1UG24CS560_Lab4_VibeCoding_ChatHistory.docx` | Formatted Word document containing complete Vibe Coding prompt interactions. |
-| **Chat History PDF** | `Lab-4/PES1UG24CS560_Lab4_VibeCoding_ChatHistory.pdf` | Formatted PDF document export of the prompt engineering and pair programming history. |
+| **Chat History Doc** | `Lab-4/PES1UG24CS580_Lab4_VibeCoding_ChatHistory.docx` | Formatted Word document containing complete Vibe Coding prompt interactions. |
+| **Chat History PDF** | `Lab-4/PES1UG24CS580_Lab4_VibeCoding_ChatHistory.pdf` | Formatted PDF document export of the prompt engineering and pair programming history. |

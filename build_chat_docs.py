@@ -14,8 +14,8 @@ from reportlab.platypus import (
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
 
 BASE_DIR = "/home/balaraj/31_galaga/Lab-4"
-DOCX_OUT = os.path.join(BASE_DIR, "PES1UG24CS560_Lab4_VibeCoding_ChatHistory.docx")
-PDF_OUT = os.path.join(BASE_DIR, "PES1UG24CS560_Lab4_VibeCoding_ChatHistory.pdf")
+DOCX_OUT = os.path.join(BASE_DIR, "PES1UG24CS580_Lab4_VibeCoding_ChatHistory.docx")
+PDF_OUT = os.path.join(BASE_DIR, "PES1UG24CS580_Lab4_VibeCoding_ChatHistory.pdf")
 
 def set_cell_background(cell, fill_hex):
     tcPr = cell._tc.get_or_add_tcPr()
@@ -49,12 +49,12 @@ def create_docx():
     table = doc.add_table(rows=6, cols=2)
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     data = [
-        ("Student Name:", "Balaraj R"),
-        ("SRN:", "PES1UG24CS560"),
-        ("Semester & Branch:", "4th Semester, B.Tech CSE (AI & ML)"),
+        ("Student Name:", "Mohith N"),
+        ("SRN:", "PES1UG24CS580"),
+        ("Semester & Branch:", "4th Semester, B.Tech CSE"),
         ("Assigned Repository:", "https://github.com/SETAPESU26/31_galaga"),
-        ("Personal Fork Repository:", "https://github.com/balaraj74/31_galaga"),
-        ("Lab Deliverables Folder:", "Lab-4 / lab04"),
+        ("Lab Repository:", "https://github.com/Mohith-1502/SE-LAB-PES1UG24CS580"),
+        ("Lab Deliverables Folder:", "Lab-4"),
     ]
     for i, (k, v) in enumerate(data):
         row = table.rows[i]
@@ -189,8 +189,8 @@ def create_docx():
         ("Before Gameplay Video (15s)", "Lab-4/before.mp4", "Completed & Verified"),
         ("After Gameplay Video (15s)", "Lab-4/after.mp4", "Completed & Verified"),
         ("Updated Source Code", "game.py & Lab-4/code/game.py", "Completed & Verified"),
-        ("Lab Chat History Report (.docx)", "Lab-4/PES1UG24CS560_Lab4_VibeCoding_ChatHistory.docx", "Completed & Verified"),
-        ("Lab Chat History Report (.pdf)", "Lab-4/PES1UG24CS560_Lab4_VibeCoding_ChatHistory.pdf", "Completed & Verified"),
+        ("Lab Chat History Report (.docx)", "Lab-4/PES1UG24CS580_Lab4_VibeCoding_ChatHistory.docx", "Completed & Verified"),
+        ("Lab Chat History Report (.pdf)", "Lab-4/PES1UG24CS580_Lab4_VibeCoding_ChatHistory.pdf", "Completed & Verified"),
     ]
     for i, row_data in enumerate(deliv_rows, start=1):
         row = deliv_table.rows[i]
@@ -282,12 +282,12 @@ def create_pdf():
     story.append(HRFlowable(width="100%", thickness=1.5, color=colors.HexColor('#2980B9'), spaceAfter=10))
 
     meta_data = [
-        [Paragraph("<b>Student Name:</b>", body_style), Paragraph("Balaraj R", body_style)],
-        [Paragraph("<b>SRN:</b>", body_style), Paragraph("PES1UG24CS560", body_style)],
-        [Paragraph("<b>Semester & Branch:</b>", body_style), Paragraph("4th Semester, B.Tech CSE (AI & ML)", body_style)],
+        [Paragraph("<b>Student Name:</b>", body_style), Paragraph("Mohith N", body_style)],
+        [Paragraph("<b>SRN:</b>", body_style), Paragraph("PES1UG24CS580", body_style)],
+        [Paragraph("<b>Semester & Branch:</b>", body_style), Paragraph("4th Semester, B.Tech CSE", body_style)],
         [Paragraph("<b>Assigned Repository:</b>", body_style), Paragraph("https://github.com/SETAPESU26/31_galaga", body_style)],
-        [Paragraph("<b>Personal Fork Repository:</b>", body_style), Paragraph("https://github.com/balaraj74/31_galaga", body_style)],
-        [Paragraph("<b>Lab Deliverables Folder:</b>", body_style), Paragraph("Lab-4 / lab04", body_style)]
+        [Paragraph("<b>Lab Repository:</b>", body_style), Paragraph("https://github.com/Mohith-1502/SE-LAB-PES1UG24CS580", body_style)],
+        [Paragraph("<b>Lab Deliverables Folder:</b>", body_style), Paragraph("Lab-4", body_style)]
     ]
     meta_table = Table(meta_data, colWidths=[140, 380])
     meta_table.setStyle(TableStyle([
@@ -354,8 +354,8 @@ def create_pdf():
         [Paragraph("Before Gameplay Video (15s)", body_style), Paragraph("Lab-4/before.mp4", body_style), Paragraph("<b>Verified</b>", ParagraphStyle('G', parent=body_style, textColor=colors.HexColor('#047857')))],
         [Paragraph("After Gameplay Video (15s)", body_style), Paragraph("Lab-4/after.mp4", body_style), Paragraph("<b>Verified</b>", ParagraphStyle('G', parent=body_style, textColor=colors.HexColor('#047857')))],
         [Paragraph("Updated Source Code", body_style), Paragraph("game.py & Lab-4/code/game.py", body_style), Paragraph("<b>Verified</b>", ParagraphStyle('G', parent=body_style, textColor=colors.HexColor('#047857')))],
-        [Paragraph("Chat History Word Document", body_style), Paragraph("Lab-4/PES1UG24CS560_Lab4_VibeCoding_ChatHistory.docx", body_style), Paragraph("<b>Verified</b>", ParagraphStyle('G', parent=body_style, textColor=colors.HexColor('#047857')))],
-        [Paragraph("Chat History PDF Document", body_style), Paragraph("Lab-4/PES1UG24CS560_Lab4_VibeCoding_ChatHistory.pdf", body_style), Paragraph("<b>Verified</b>", ParagraphStyle('G', parent=body_style, textColor=colors.HexColor('#047857')))]
+        [Paragraph("Chat History Word Document", body_style), Paragraph("Lab-4/PES1UG24CS580_Lab4_VibeCoding_ChatHistory.docx", body_style), Paragraph("<b>Verified</b>", ParagraphStyle('G', parent=body_style, textColor=colors.HexColor('#047857')))],
+        [Paragraph("Chat History PDF Document", body_style), Paragraph("Lab-4/PES1UG24CS580_Lab4_VibeCoding_ChatHistory.pdf", body_style), Paragraph("<b>Verified</b>", ParagraphStyle('G', parent=body_style, textColor=colors.HexColor('#047857')))]
     ]
     t_deliv = Table(deliv_data, colWidths=[180, 240, 100])
     t_deliv.setStyle(TableStyle([
